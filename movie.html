@@ -1,0 +1,406 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="4.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <a name="up"></a>
+    <header class="hero" >
+      <div class="container flex item-center justify-between">
+        <div class="icons">
+          <a href="#" class="logos"><img src="icons/facebook.svg" alt=""></a>
+          <a href="#"><img src="icons/instagram.svg" alt=""></a>
+          <a href="#"><img src="icons/twitter.svg" alt=""></a>
+
+        </div>
+
+        <div class="auth flex item-center">
+          <div class="">
+              <button  class="sbtn " onclick="openForm2()">Login</button>
+          </div>
+          <div class="">
+              <button  class="sbtn" onclick="openForm()">Sign Up</button>
+          </div>
+
+
+          </div>
+          </div>
+
+          <div class="hero-text">
+            <h1>Let's find some<span style="font-family: 'Kalam', cursive;color:red"> hidden</span><br> gems of cinema.</h1>
+
+        </div>
+        <div class="overlay">
+          </div>
+          <div class="loginPopup" id="popup">
+            <div class="formPopup" id="popupForm">
+            <form name="myForm" action="/action_page.php" onsubmit="return validateForm(this)" method="post" class="formContainer"  >
+              <a onclick="closeForm()"><i class="fa fa-close" style="font-size:48px;"></i></a>
+                <h2 class=" flex">Sign Up</h2>
+
+                <input type="text" id="name" placeholder="Your name" name="name">
+                <input type="text" id="phno" placeholder="Your Phone No." name="phno" >
+                <input type="text" id="email" placeholder="Your Email" name="email" >
+                <input type="password" id="psw" placeholder="Your Password" name="psw" >
+                <input type="password" id="cnfpsw" placeholder="Your confirm Password" name="cpsw" >
+                <button type="submit" class="btn " value="Submit">Sign up</button>
+
+              </form>
+            </div>
+            <div class="formPopup" id="popupForm2">
+            <form name="myForm2" action="/action_page.php" onsubmit="return validateForm2(this)" method="post" class="formContainer"  >
+                <a onclick="closeForm2()"><i class="fa fa-close" style="font-size:48px;"></i></a>
+                <h2>Login </h2>
+                <input type="text" id="email" placeholder="Your Email" name="email" >
+                <input type="password" id="psw" placeholder="Your Password" name="psw" >
+                <button type="submit" class="btn" value="Submit">Log in</button>
+
+
+              </form>
+            </div>
+
+          </div>
+    </header>
+
+    <section class="summary">
+      <div class="container">
+        <h1 class="section-heading">About</h1>
+        <div class="review text-center">
+          <h2 class="info">We provide a <span style="font-family: 'Kalam', cursive;color:red">unique</span> list of movies which are lesser known among viewers but are a<span style="font-family: 'Kalam', cursive;color:red"> Great</span> piece of <span style="font-family: 'Kalam', cursive;color:red">Art</span> .</h2>
+          </div>
+      </div>
+    </section>
+
+    <section class="top-movies">
+      <div class="container">
+        <h1 class="section-heading">Movies List</h1>
+        <div class="slider">
+          <div class="movie-slider flex item-center justify-center justify-between">
+
+
+            <div class="movie-card">
+                <div class="movie-image flex item-center justify-center">
+                <img src="casposter.jpg" alt="">
+              </div>
+              <div>
+                <h2 class="text-center">Come and See</h2>
+                <div class="director text-center">
+                  Director: Elem Klimov
+                </div>
+              </div>
+              </div>
+              <div class="movie-card1 ">
+                <div class="review ">
+                  <h2 class="plot">The invasion of a village in Byelorussia by German forces sends young Florya (Aleksey Kravchenko) into the forest to join the weary Resistance fighters, against his family's wishes. There he meets a girl, Glasha (Olga Mironova), who accompanies him back to his village. On returning home, Florya finds his family and fellow peasants massacred. His continued survival amidst the brutal debris of war becomes increasingly nightmarish, a battle between despair and hope.</h2>
+                  </div>
+                </div>
+
+                <div class="movie-card">
+                  <div class="movie-image flex item-center justify-center">
+                    <img src="annihlationposter.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2 class="text-center">Annihilation</h2>
+                    <div class="director text-center">
+                      Director: Alex Garland
+                    </div>
+                  </div>
+                </div>
+                <div class="movie-card1 ">
+                  <div class="review ">
+                    <h2 class="plot">Lena, a biologist and former soldier, joins a mission to uncover what happened to her husband inside Area X -- a sinister and mysterious phenomenon that is expanding across the American coastline. Once inside, the expedition discovers a world of mutated landscapes and creatures, as dangerous as it is beautiful, that threatens both their lives and their sanity.</h2>
+                    </div>
+                  </div>
+
+
+                  <div class="movie-card">
+                      <div class="movie-image flex item-center justify-center">
+                      <img src="tumbbadposter.jpg" alt="">
+                    </div>
+                    <div>
+                      <h2 class="text-center">Tumbbad</span></h2>
+                    <div class="director text-center">
+                      <span >  Director: Anand Gandhi, Rahi Anil Barve</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="movie-card1 ">
+                      <div class="review ">
+                        <h2 class="plot">A young boy Vinayak Rao is affected by a personal tragedy. His encounter with a wretched old lady who knows of a buried treasure sets him on the path to greed. He grows up to explore the local legend of a monster named Hastar and his gold medallions.</h2>
+                        </div>
+                      </div>
+
+                      
+                <div class="movie-card">
+                  <div class="movie-image flex item-center justify-center">
+                    <img src="candyflipposter.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2 class="text-center">Candy Flip</h2>
+                    <div class="director text-center">
+                      Director: Shanawaz Nellikunnil
+                    </div>
+                  </div>
+                </div>
+                <div class="movie-card1 ">
+                  <div class="review ">
+                    <h2 class="plot">A man's hallucinogenic journey on the shores of Goa brings him into contact with drug mules, back-stabbing friends, and drugged-out police.</h2>
+                    </div>
+                  </div>
+
+                <div class="movie-card">
+                  <div class="movie-image flex item-center justify-center">
+                    <img src="honeyboyposter.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2 class="text-center">Honey Boy</h2>
+                    <div class="director text-center">
+                      Director:  Alma Har'el
+                    </div>
+                  </div>
+                </div>
+                <div class="movie-card1 ">
+                  <div class="review ">
+                    <h2 class="plot">When 12-year-old Otis begins to find success as a television star, his abusive, alcoholic father returns and takes over as his guardian, and their contentious relationship is followed over a decade.When 12-year-old Otis begins to find success as a television star, his abusive, alcoholic father returns and takes over as his guardian, and their contentious relationship is followed over a decade.</h2>
+                    </div>
+                  </div>
+
+
+                <div class="movie-card">
+                  <div class="movie-image flex item-center justify-center">
+                    <img src="wakinglifeposter.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2 class="text-center">Waking Life</h2>
+                    <div class="director text-center">
+                      Director: Richard Linklater
+                    </div>
+                  </div>
+                </div>
+                <div class="movie-card1 ">
+                  <div class="review ">
+                    <h2 class="plot">Transcending the boundaries of technology and imagination, "Waking Life" is a revolutionary breakthrough in film animation. In "Waking Life," Wiley Wiggins ("Dazed and Confused") travels through a series of encounters and observations in a world that may or may not be reality. It is this surreal existence, flourishing with endless ideas and possibilities, that ultimately leads to the question -- Are we sleep-walking through our waking state or wake-walking through our dreams?</h2>
+                    </div>
+                  </div>
+
+
+                <div class="movie-card">
+                  <div class="movie-image flex item-center justify-center">
+                    <img src="cusoonposter.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2 class="text-center">C U Soon</h2>
+                    <div class="director text-center">
+                      Director: Mahesh Narayanan
+                    </div>
+                  </div>
+                </div>
+                <div class="movie-card1 ">
+                  <div class="review ">
+                    <h2 class="plot">A software engineer, living in Kerala, is prompted by his family to look for his cousin's missing fiancee. As they stumble upon her video-based suicide note, he races against time to find her.</h2>
+                    </div>
+                  </div>
+
+
+                  <div class="movie-card">
+                    <div class="movie-image flex item-center justify-center">
+                      <img src="runlolarunposter.jpg" alt="">
+                    </div>
+                    <div>
+                      <h2 class="text-center">Run Lola Run</h2>
+                      <div class="director text-center">
+                        Director: Tom Tykwer
+                      </div>
+                    </div>
+                  </div>
+                  <div class="movie-card1 ">
+                    <div class="review ">
+                      <h2 class="plot">In this visually and conceptually impressive film, two-bit Berlin criminal Manni (Moritz Bleibtreu) delivers some smuggled loot for his boss, Ronnie (Heino Ferch), but accidentally leaves the 100,000 mark payment in a subway car. Given 20 minutes to come up with the money, he calls his girlfriend, Lola (Franka Potente), who sprints through the streets of the city to try to beg the money out of her bank manager father (Herbert Knaup) and get to Manni before he does something desperate.</h2>
+                      </div>
+                    </div>
+
+            </div>
+          </div>
+        </div>
+
+        </section>
+
+        <section class="footer">
+          <div class="container">
+            <div class="Contact flex  item-center">
+              <form name="myForm3" action="/action_page.php" onsubmit="return validateForm2(this)" method="post" class="formContainer2"  >
+
+                  <h2 class="contactbox">Contact Me</h2>
+                  <input type="text" id="email" placeholder="Your Email" name="email" >
+                  <textarea id="review" name="review" rows="5" cols="30" placeholder="">
+
+                  </textarea>
+                  <br><br>
+                  <button type="submit" class="btn" value="Submit">Send</button>
+                </form>
+  <button class="upbtn" ><a href="#up"><i class="fa fa-arrow-up"></a></i></button>
+          </div>
+
+        </div>
+        </section>
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous"></script>
+          <script type="text/javascript">
+          function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+          }
+          function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+          }
+          function checkPassword(str)
+            {
+              var re = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[&$#@]).{6,}$/;
+              return re.test(str);
+            }
+            function checkemail(str)
+              {
+                var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+                return reg.test(str);
+              }
+              function checkphno(str)
+                {
+                  var regx = /^[6-9]\d{9}$/ ;
+                  return regx.test(str);
+                }
+          function validateForm(myForm)
+          {
+
+            if(myForm.name.value == "") {
+              alert("Error: Username cannot be blank!");
+              myForm.name.focus();
+              return false;
+            }
+            if(myForm.psw.value == "") {
+              alert("Error: password cannot be blank!");
+              myForm.psw.focus();
+              return false;
+            }
+            if(myForm.cpsw.value == "") {
+              alert("Error: Confirm password cannot be blank!");
+              myForm.cpsw.focus();
+              return false;
+            }
+            if(myForm.psw.value != myForm.cpsw.value) {
+              alert("Error: password does not match");
+              myForm.cpsw.focus();
+              return false;
+            }
+            if(myForm.psw.value != "" && myForm.psw.value == myForm.cpsw.value)
+            {
+              if(!checkPassword(myForm.psw.value))
+               {
+              alert("The password you have entered is not valid!");
+              myForm.psw.focus();
+              return false;
+              }
+
+           }
+
+           if(!checkemail(myForm.email.value))
+            {
+           alert("The email ID you have entered is not valid!");
+           myForm.email.focus();
+           return false;
+           }
+           if(!checkphno(myForm.phno.value))
+            {
+           alert("The phno you have entered is not valid!");
+           myForm.phno.focus();
+           return false;
+         }
+        }
+
+        function openForm2() {
+          document.getElementById("popupForm2").style.display = "block";
+        }
+        function closeForm2() {
+          document.getElementById("popupForm2").style.display = "none";
+        }
+        function validateForm2(myForm2)
+        {
+
+          if(myForm2.psw.value == "") {
+            alert("Error: password cannot be blank!");
+            myForm2.psw.focus();
+            return false;
+          }
+
+          if(myForm2.psw.value != "" )
+          {
+            if(!checkPassword(myForm2.psw.value))
+             {
+            alert("The password you have entered is not valid!");
+            myForm2.psw.focus();
+            return false;
+            }
+
+         }
+
+         if(!checkemail(myForm2.email.value))
+          {
+         alert("The email ID you have entered is not valid!");
+         myForm2.email.focus();
+         return false;
+         }
+       }
+          $('.movie-slider').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+          </script>
+    </body>
+</html>

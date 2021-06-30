@@ -1,0 +1,307 @@
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+
+    overflow-x  : hidden;
+    background-color: #DDDEFF;
+  }
+
+  .container{
+  width:100%;
+  padding:0 15px;
+  margin:0 auto;
+}
+@media (min-width:1200px) {
+  .container{
+    max-width:1152px;
+  }
+}
+
+
+header.hero .auth .sbtn{
+  color:#E9E9E9;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  padding:0.50rem 0;
+  font-size:1em;
+  padding-right: 1.2rem;
+  transform: translateY(-50%);
+  z-index: 2;
+  position:relative;
+
+
+}
+header.hero .auth .sbtn:hover{
+  color: #6DBAA1;
+  background: transparent;
+  text-decoration: none;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  padding:0.50rem 0;
+  font-size:1em;
+  padding-right: 1.2rem;
+  transform: translateY(-50%);
+  z-index: 2;
+
+}
+.flex{
+  display: flex;
+}
+.justify-between{
+  justify-content: space-between;
+}
+.item-center{
+  align-items: center;
+}
+.justify-center{
+    justify-content:center;
+}
+header.hero .icons img{
+  margin-right: 0.5rem;
+  transform: translateY(-50%);
+  z-index: 2;
+  position: relative;
+    padding:0.50rem 0;
+object-fit: contain;
+
+}
+
+
+header.hero .auth a{
+  margin-right: 1rem;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+header.hero{
+  height:755px;
+  background-image: url('4.jpg');
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  color:white;
+  font-family:serif;
+  padding:2rem 0;
+  font-size:1.5em;
+}
+.hero-text{
+  position: relative;
+  left:5%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  font-family: 'Poppins', sans-serif;
+
+}
+.hero-text h1{
+  font-size: 90px;
+  color: #E9E9E9;
+  text-align: center;
+  margin:0;
+}
+.overlay{
+  background: #2f2a31d9;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+
+.openBtn {
+  display: flex;
+  justify-content: left;
+  position: absolute;
+}
+.openButton{
+  top:50%;
+}
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 7%;
+  transform: translate(-50%, 5%);
+  border: 3px ;
+   background: #DDDEFF;
+  z-index: 20;
+  border-radius: 40px;
+}
+
+
+.formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #DDDEFF;
+    border-radius: 100px;
+}
+.formContainer2 {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+    border-radius: 20px;
+}
+.formContainer input[type=text],
+.formContainer input[type=password] ,.formContainer2 input[type=text],
+.formContainer2 input[type=password]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: transparent;
+   border-bottom: 3px solid #00523E;
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus,
+.formContainer2 input[type=text]:focus,
+.formContainer2 input[type=password]:focus {
+  outline: none;
+}
+.formContainer .btn,
+.formContainer2 .btn {
+  padding: 12px 20px;
+  border: none;
+font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  width: 30%;
+  margin-bottom: 15px;
+  opacity: 0.8;
+  border-radius: 20px;
+background-image: linear-gradient(to right top, #6dbaa1, #549f87, #3b846d, #226b55, #00523e);
+}
+.formContainer a
+{
+  position: relative;
+  left:40%;
+  color: black;
+}
+.formContainer a:hover
+{
+  color: red;
+}
+.formContainer h2{
+  color: black;
+  padding-bottom: 1rem;
+
+}
+
+.formContainer .btn:hover,
+.openButton:hover,
+.formContaine2r .btn:hover,
+.openButton:hover {
+  opacity: 1;
+  font-family: 'Open Sans', sans-serif;
+}
+section{
+  padding: 4rem 0;
+  margin: 4rem 0;
+}
+section.top-movies{
+
+}
+section.summary{
+  background: #6DBAA1 ;
+   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 1);
+}
+section.footer{
+  background: #6DBAA1 ;
+   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 1);
+}
+.section-heading{
+font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+    font-size: 70px;
+}
+section.summary .review .info{
+  font-family: 'Poppins', sans-serif;
+  font-size: 70px;
+}
+
+section.top-movies .movie-slider .movie-card{
+  background: #00523E;
+  padding: 1.5rem 0;
+  border-radius: 4px;
+   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 1);
+}
+
+section.top-movies .movie-slider .movie-card h2,section.top-movies .movie-slider .movie-card1 h2{
+font-family: 'Kalam', cursive;color:black;font-size:20px;
+  margin-bottom: 0.25rem;
+}
+section.top-movies .movie-slider .movie-card1 .review .plot{
+  font-family: 'Open Sans', sans-serif;
+  color:black;
+  font-size:20px;
+  margin-bottom: 0.25rem;
+}
+section.top-movies .movie-slider .movie-card1 .review{
+  position: relative;
+  padding: 1.5rem 1.5rem;
+  }
+.text-center{
+    text-align: center;
+}
+section.top-movies .movie-slider .movie-card .director,section.top-movies .movie-slider .movie-card1 .director{
+  font-family: 'Kalam', cursive;
+  color:black;
+  font-size:20px;
+  margin-bottom: 1rem;
+}
+.slick-slide{
+  margin:0 27px;
+}
+section.top-movies .movie-slider .movie-card1{
+  background: #6DBAA1;
+  padding: 1.5rem 0;
+  border-radius: 4px;
+   box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 1);
+}
+section.top-movies .movie-slider .movie-card1 .movie-image img,section.top-movies .movie-slider .movie-card .movie-image img{
+  width:80%;
+  height: 500px;
+  padding-bottom: 1rem;
+  object-fit: contain;
+}
+section.summary .container .section-heading .contact .formContainer .contactbox{
+  text-align: center;
+  padding-left: 30px;
+}
+section.summary .container .section-heading .contact .formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+    border-radius: 10px;
+}
+.upbtn{
+  border-radius: 50px;
+  font-size: 45px;
+  padding: 1rem 1rem;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+   background-color: red;
+   border: none;
+   margin-left: 50rem;
+   float:right;
+   height: 100%;
+  transition: 5s;
+}
+.upbtn a{
+  text-decoration: none;
+  color: white;
+  transition: 5s;
+}
